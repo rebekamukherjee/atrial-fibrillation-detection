@@ -43,7 +43,7 @@ def get_stop_words(num_stop_words):
 
 
 def get_vector(num_features, num_stop_words, vectorizer_type, training_notes):
-	"""Returns a tfidf vectorizer or a count vectorizer.
+	"""Returns a tfidf vector or a count vector.
 
 	Args:
 		num_features: The number of features to create.
@@ -107,7 +107,7 @@ def get_performance(y, y_pred):
 
 
 def train_notes(training_frame, model_name, model, num_features, num_stop_words, vectorizer_type):
-	"""Trains a machine learning model with speicified hyperparameters with the
+	"""Trains a machine learning model with specified hyperparameters with the
 	training data.
 
 	Args:
