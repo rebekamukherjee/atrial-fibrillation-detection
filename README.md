@@ -9,26 +9,26 @@ atrial-fibrillation-detection
 |
 +-- src
 |	|
-|	+-- data 										# folder containing metadata, training data, validation data
+|	+-- data
 |	|
-|	+-- machine-learning 							# folder containing python scripts for machine learning method
+|	+-- machine-learning
 |	|	|
-|	|	+-- models 									# folder containing all trained machine learning models
+|	|	+-- models
 |	|	|
-|	|	+-- results									# folder containing training and validation performances for all the models
+|	|	+-- results
 |	|	|	|
-|	|	|	+-- ml_training_performance.csv 		# csv file with training performances
-|	|	|	+-- ml_validation_performance.csv 		# csv file with validation performances
+|	|	|	+-- ml_training_performance.csv
+|	|	|	+-- ml_validation_performance.csv
 |	|	|
-|	|	+-- vectorizers 							# folder containing all vectorizers
+|	|	+-- vectorizers
 |	|	|
-|	|	+-- extract.py 								# script to extract clinical notes and append to training and validation data
-|	|	+-- train.py 								# script to train machine learning models
-|	|	+-- validate.py 							# script to validate machine learning models
+|	|	+-- extract.py
+|	|	+-- train.py
+|	|	+-- validate.py
 |	|
-|	+-- rules-based 								# folder containing python scripts for rules based method
+|	+-- rules-based
 |	|
-|	+-- README.md 									# readme file
+|	+-- README.md
 ```
 
 ## Machine Learning Method
