@@ -106,3 +106,5 @@ venv.bak/
 .DS_Store
 
 src/data/
+src/machine-learning/models/
+src/machine-learning/vectorizers/
