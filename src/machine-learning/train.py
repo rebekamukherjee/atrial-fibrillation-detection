@@ -97,12 +97,12 @@ def get_performance(y, y_pred):
 	FN=CM[1][0]
 	FP=CM[0][1]
 	TP=CM[1][1]
-	accuracy = (TP+TN)*1.0/(TP+TN+FP+FN)
-	ppv = TP*1.0/(TP+FP)
-	npv = TN*1.0/(TN+FN)
-	sensitivity = TP*1.0/(TP+FN)
-	specificity = TN*1.0/(FP+TN)
-	fscore = 2.0*((sensitivity*ppv)/(sensitivity+ppv))
+	accuracy = round((TP+TN)*1.0/(TP+TN+FP+FN), 3)
+	ppv = round(TP*1.0/(TP+FP), 3)
+	npv = round(TN*1.0/(TN+FN), 3)
+	sensitivity = round(TP*1.0/(TP+FN), 3)
+	specificity = round(TN*1.0/(FP+TN), 3)
+	fscore = round(2.0*((sensitivity*ppv)/(sensitivity+ppv)), 3)
 	return [accuracy, ppv, npv, sensitivity, specificity, fscore]
 
 
@@ -129,8 +129,7 @@ def train_notes(training_frame, model_name, model, num_features, num_stop_words,
 
 	parameter_name = '_'.join([model_name, str(num_features) + 'f', str(num_stop_words) + 'sw', vectorizer_type])
 	print 'Training {}...'.format(parameter_name)
-	#training_notes = list(training_frame['notes'])
-	training_notes = list(training_frame['phrases'])
+	training_notes = list(training_frame['notes'])
 	vector = get_vector(training_notes=training_notes, 
 							num_features=num_features, 
 							num_stop_words=num_stop_words, 
@@ -186,7 +185,7 @@ def main():
 																'train sensitivity', 
 																'train specificity', 
 																'train fscore'])
-	performance_frame.to_csv('./ml_training_performance.csv')
+	performance_frame.to_csv('./results/ml_training_performance.csv')
 
 
 if __name__ == '__main__':
