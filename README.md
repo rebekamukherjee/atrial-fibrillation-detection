@@ -4,6 +4,7 @@ This repository contains python scripts used in the study at The University of U
 
 ## Directory Structure
 
+```
 atrial-fibrillation-detection
 |
 +-- src
@@ -28,7 +29,7 @@ atrial-fibrillation-detection
 |	+-- rules-based 								# folder containing python scripts for rules based method
 |	|
 |	+-- README.md 									# readme file
-
+```
 
 ## Machine Learning Method
 
