@@ -27,8 +27,29 @@ atrial-fibrillation-detection
 |	|	+-- validate.py
 |	|
 |	+-- rules-based
-|	|
-|	+-- README.md
+|	|	|
+|	|	+-- results
+|	|	|
+|	|	+-- compare.py
+|	|	+-- predict.py
+|
++-- README.md
+```
+
+## Rules Based Method
+
+### Usage
+
+To get the predictions of the rules-based NLP model on the training (-t) or validation (-v) data, run the following command on CLI:
+
+```
+python predict.py [-t | -v]
+```
+
+To compare the rules-based model performance with that of traditional models, run the following command on CLI:
+
+```
+python compare.py
 ```
 
 ## Machine Learning Method
