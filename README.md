@@ -27,11 +27,11 @@ atrial-fibrillation-detection
 |	|	+-- validate.py
 |	|
 |	+-- rules-based
-|	|	|
-|	|	+-- results
-|	|	|
-|	|	+-- compare.py
-|	|	+-- predict.py
+|		|
+|		+-- results
+|		|
+|		+-- predict.py
+|		+-- compare.py
 |
 +-- README.md
 ```
